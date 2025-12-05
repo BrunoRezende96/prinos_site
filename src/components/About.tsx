@@ -91,7 +91,7 @@ const About: React.FC = () => {
           ))}
         </div>
 
-        {/* BOTÃO */}
+        {/* BOTÃO
         <motion.div
           className="text-center relative z-20"
           initial={{ opacity: 0, y: 50 }}
@@ -107,7 +107,7 @@ const About: React.FC = () => {
           >
             Conheça Nossos Projetos
           </motion.button>
-        </motion.div>
+        </motion.div> */}
 
       </div>
     </section>

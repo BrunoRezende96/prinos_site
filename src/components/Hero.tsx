@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import { motion } from 'framer-motion';
-import { div } from 'framer-motion/client';
 
 const Hero: React.FC = () => {
 
