@@ -71,7 +71,7 @@ const Gallery: React.FC = () => {
   return (
     <section id="gallery" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <motion.div
+        {/* <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -84,9 +84,12 @@ const Gallery: React.FC = () => {
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Conheça alguns dos nossos projetos realizados e inspire-se para criar o ambiente dos seus sonhos.
           </p>
-        </motion.div>
+        </motion.div> */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="mt-[280px] px-10 pb-10 relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className='absolute w-full h-[480px] rounded-[10px] bottom-0 bg-red-600' ></div>
+          
+          
           {projects.map((project, index) => (
             <motion.div
               key={project.id}

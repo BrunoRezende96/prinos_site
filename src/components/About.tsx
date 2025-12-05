@@ -35,7 +35,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-transparent relative z-20">
+    <section id="about" className="mt-[-200px] py-20 bg-transparent relative z-20">
       <div className="container mx-auto px-4">
         
         <motion.div
@@ -45,11 +45,11 @@ const About: React.FC = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="hidden text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Sobre a <span className="text-red-600">Prinos Planejados</span>
           </h2>
           
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto hidden">
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
               Com 16 anos de história no mercado de móveis planejados, a Prinos Planejados
               se consolidou como referência em qualidade, inovação e atendimento personalizado.
@@ -74,7 +74,7 @@ const About: React.FC = () => {
               className="bg-white p-6 rounded-lg shadow-lg text-center cursor-pointer relative z-10"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
+              transition={{ duration: 0.3, delay: index * 0.3 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.05 }}
             >

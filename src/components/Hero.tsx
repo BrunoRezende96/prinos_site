@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import { motion } from 'framer-motion';
+import { div } from 'framer-motion/client';
 
 const Hero: React.FC = () => {
 
@@ -21,28 +22,29 @@ const Hero: React.FC = () => {
   const slidesDesktop = [
     {
       id: 1,
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1920&q=80',
+      image: 'desktop1.png',
       title: 'Cozinhas Planejadas',
       subtitle: 'Transformamos sua cozinha em um ambiente funcional e elegante'
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?auto=format&fit=crop&w=1920&q=80',
-      title: 'Dormitórios Sob Medida',
+      image: 'desktop2.png',
+      title: 'Conheça nossos projetos',
       subtitle: 'Móveis planejados que maximizam o espaço e o conforto'
     },
-    {
-      id: 3,
-      image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1920&q=80',
-      title: 'Salas de Estar',
-      subtitle: 'Ambientes aconchegantes para momentos especiais'
-    },
-    {
-      id: 4,
-      image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1920&q=80',
-      title: 'Home Office',
-      subtitle: 'Espaços funcionais para sua produtividade'
-    }
+
+    // {
+    //   id: 3,
+    //   image: 'desktop3.png',
+    //   title: 'Salas de Estar',
+    //   subtitle: 'Ambientes aconchegantes para momentos especiais'
+    // },
+    // {
+    //   id: 4,
+    //   image: 'desktop4.png',
+    //   title: 'Home Office',
+    //   subtitle: 'Espaços funcionais para sua produtividade'
+    // }
   ];
 
   // IMAGENS MOBILE – 1080x1920 (verticais)
@@ -75,7 +77,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section id="hero" className="relative h-screen">
+    <section id="hero" className="relative h-screen object-cover">
       <Swiper
         modules={[Navigation, Pagination, Autoplay, EffectFade]}
         effect="fade"
@@ -118,7 +120,7 @@ const Hero: React.FC = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                   >
-                    {slide.subtitle}
+                    <div className='mt-[-15px]' >{slide.subtitle}</div>
                   </motion.p>
 
                   <motion.button
