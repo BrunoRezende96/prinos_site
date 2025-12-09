@@ -105,7 +105,13 @@ const Hero: React.FC = () => {
                 <div className="text-center text-white px-4 max-w-4xl">
 
                   <motion.h1
-                    className="text-4xl md:text-6xl font-bold mb-4"
+                    className="text-4xl font-bold mb-4
+
+
+                    #ajustes no tamanho do título em md
+                    md:text-4xl
+                    
+                    "
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
@@ -114,7 +120,10 @@ const Hero: React.FC = () => {
                   </motion.h1>
 
                   <motion.p
-                    className="text-lg md:text-2xl mb-8"
+                    className="text-lg mb-8
+                    
+                    #ajustes no tamanho do subtitle em md
+                    md:text-xl"
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
@@ -124,7 +133,11 @@ const Hero: React.FC = () => {
 
                   <motion.button
                     onClick={handleWhatsAppClick}
-                    className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-lg"
+                    className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-lg
+                    
+                    #ajustes no tamanho do botão em md
+                    md:px-6
+                    md:py-3"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
