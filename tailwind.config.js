@@ -5,6 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'xs': '420px',    // breakpoint personalizado
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
+
     extend: {
       colors: {
         primary: "#A00000",
@@ -41,5 +50,6 @@ export default {
       },
     },
   },
+
   plugins: [],
 }

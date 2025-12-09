@@ -8,43 +8,43 @@ const Gallery: React.FC = () => {
   const projects = [
     {
       id: 1,
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'desktop1.png',
       title: 'Cozinha Moderna',
       category: 'Cozinha'
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'desktop2.png',
       title: 'Dormitório Casal',
       category: 'Dormitório'
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'desktop3.png',
       title: 'Sala de Estar',
       category: 'Sala'
     },
     {
       id: 4,
-      image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'desktop4.png',
       title: 'Home Office',
       category: 'Escritório'
     },
     {
       id: 5,
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'mobile1.png',
       title: 'Cozinha Clássica',
       category: 'Cozinha'
     },
     {
       id: 6,
-      image: 'https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'mobile2.png',
       title: 'Quarto Infantil',
       category: 'Dormitório'
     },
     {
       id: 7,
-      image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'mobile3.png',
       title: 'Sala de Jantar',
       category: 'Sala'
     },
@@ -88,14 +88,43 @@ const Gallery: React.FC = () => {
 
         <div className="mt-[300px] px-10 pb-10 relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4
         
+        #ajuste margin top em xs
+          xs:mt-[500px]
+
         #ajuste margin top em md
+          md:mt-[30px]
+
+        #ajuste margin top em lg
+          lg:mt-[180px]
+
+        #ajustes em xl
+          xl:mt-[250px]
+          xl:gap-x-4
+          xl:gap-y-4
+
+        #ajustes em 2xl
+          2xl:mt-[300px]
+          2xl:gap-x-6
+          2xl:gap-y-6
+          
+
+
         ">
-          <div className='absolute w-full h-[95%] rounded-[10px] bottom-0 bg-red-600
+          <div className='absolute w-full h-[95%] rounded-[10px] bottom-0 bg-red-600    
           
           #ajuste altura do background em md
-          md:h-[100%]
+          md:h-[95%]
           md:flex
-          md:top-[-1.25rem]
+
+          #ajuste altura do background em lg
+          lg:h-[90%]
+          lg:flex
+
+          #ajuste altura do background em xl
+          xl:h-[85%]
+          xl:flex
+          
+
 
 
           
@@ -110,12 +139,23 @@ const Gallery: React.FC = () => {
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
-              className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg
+              className="relative object-cover group cursor-pointer overflow-hidden rounded-lg shadow-lg 
               
               #Ajuste de tamanho dos cards em md
-              
-              md:h-[150px]
+              md:h-[250px]
               md:w-[300px]
+
+              #Ajuste de tamanho dos cards em lg
+              lg:h-[250px]
+              lg:w-[280px]
+
+              #Ajuste de tamanho dos cards em xl
+              xl:h-[250px]
+              xl:w-[280px]
+
+              #Ajuste de tamanho dos cards em 2xl
+              2xl:h-[250px]
+              2xl:w-[350px]
               
               "
               initial={{ opacity: 0, y: 50 }}
