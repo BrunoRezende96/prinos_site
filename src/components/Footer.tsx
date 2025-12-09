@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-black text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo e Descrição */}
@@ -26,11 +26,14 @@ const Footer: React.FC = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-red-600 mb-4">
-              Prinos Planejados
-            </h3>
+            <div className='w-full flex justify-center py-3'>
+              <img
+                src="logo_prinos_sf.png"
+                alt="logo prinos"
+                className='w-[30%] cursor-pointer hover:transform hover:scale-105 transition-all duration-300' /> 
+            </div>
             <p className="text-gray-300 mb-4 leading-relaxed">
-              Há 16 anos transformando sonhos em realidade através de móveis planejados 
+              Há 16 anos transformando sonhos em realidade através de móveis planejados
               de alta qualidade e design exclusivo.
             </p>
             <div className="flex space-x-4">

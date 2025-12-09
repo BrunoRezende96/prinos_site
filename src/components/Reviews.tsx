@@ -11,7 +11,7 @@ const Reviews: React.FC = () => {
       name: 'Maria Silva',
       rating: 5,
       comment: 'Excelente trabalho! A equipe da Prinos superou todas as minhas expectativas. Minha cozinha ficou perfeita!',
-      date: '2 semanas atrás'
+      date: '2 anos atrás'
     },
     {
       id: 2,
@@ -25,28 +25,28 @@ const Reviews: React.FC = () => {
       name: 'Ana Costa',
       rating: 5,
       comment: 'Qualidade excepcional e atendimento personalizado. Transformaram completamente nosso quarto. Muito satisfeita!',
-      date: '3 semanas atrás'
+      date: '2 semanas atrás'
     },
     {
       id: 4,
       name: 'Carlos Oliveira',
       rating: 5,
       comment: 'Empresa séria e confiável. Cumpriram todos os prazos e o resultado final foi além do esperado.',
-      date: '1 semana atrás'
+      date: '10 anos atrás'
     },
     {
       id: 5,
       name: 'Fernanda Lima',
       rating: 5,
       comment: 'Adorei o projeto da sala de estar. Equipe muito profissional e materiais de primeira qualidade.',
-      date: '2 meses atrás'
+      date: '7 meses atrás'
     },
     {
       id: 6,
       name: 'Roberto Mendes',
       rating: 5,
       comment: 'Excelente custo-benefício. A marcenaria ficou perfeita e o atendimento foi impecável do início ao fim.',
-      date: '3 semanas atrás'
+      date: '3 anos atrás'
     }
   ];
 

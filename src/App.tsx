@@ -28,7 +28,7 @@ export default function App() {
                 <About />
                 <Gallery />
                 <Reviews />
-                <Contact />
+                {/* <Contact /> */}
               </motion.div>
             } />
           </Routes>

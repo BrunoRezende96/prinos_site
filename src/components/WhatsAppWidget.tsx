@@ -14,29 +14,29 @@ const WhatsAppWidget: React.FC = () => {
     <>
       {/* Widget Button */}
       <motion.div
-        className="fixed bottom-6 right-6 z-40"
+        className="fixed bottom-6 right-6 z-50 cursor-pointer"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
-        transition={{ delay: 2, type: "spring", stiffness: 260, damping: 20 }}
+        transition={{ delay: 0.5, type: "spring", stiffness: 260, damping: 20 }}
       >
         <motion.button
           onClick={() => setIsOpen(!isOpen)}
-          className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300"
+          className="relative bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
           <MessageCircle className="w-6 h-6" />
+
+          {/* Pulse animation - COM pointer-events-none */}
+          <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-20 pointer-events-none"></div>
         </motion.button>
-        
-        {/* Pulse animation */}
-        <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-20"></div>
       </motion.div>
 
       {/* Widget Popup */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed bottom-24 right-6 z-40 bg-white rounded-lg shadow-xl border max-w-sm w-80"
+            className="fixed bottom-24 right-6 z-50 bg-white rounded-lg shadow-xl border max-w-sm w-80"
             initial={{ opacity: 0, y: 20, scale: 0.8 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.8 }}
@@ -68,7 +68,7 @@ const WhatsAppWidget: React.FC = () => {
                   Olá! 👋 Como podemos ajudá-lo hoje? Estamos prontos para transformar seus sonhos em realidade!
                 </p>
               </div>
-              
+
               <motion.button
                 onClick={handleWhatsAppClick}
                 className="w-full bg-green-500 hover:bg-green-600 text-white py-3 px-4 rounded-lg font-semibold transition-colors duration-300 flex items-center justify-center"
@@ -78,7 +78,7 @@ const WhatsAppWidget: React.FC = () => {
                 <MessageCircle className="w-5 h-5 mr-2" />
                 Iniciar Conversa
               </motion.button>
-              
+
               <p className="text-xs text-gray-500 text-center mt-2">
                 Resposta rápida garantida!
               </p>

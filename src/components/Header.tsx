@@ -43,13 +43,14 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div
-            className="flex items-center"
+            className="flex items-center justify-center h-[100%] w-[20%]"
             whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            // transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
-            <h1 className="text-2xl font-bold text-red-600">
-              Prinos Planejados
-            </h1>
+            <img 
+            src="prinos_logo.png" 
+            alt="prinos logo"
+            className='object-cover w-[50%] cursor-pointer origin-center' />
           </motion.div>
 
           {/* Desktop Navigation */}
