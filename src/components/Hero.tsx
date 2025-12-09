@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
 import { motion } from 'framer-motion';
-import { button } from 'framer-motion/client';
+import Button from './button';
 
 const Hero: React.FC = () => {
 
-  // Estado para detectar se é mobile
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
   useEffect(() => {
@@ -18,29 +17,32 @@ const Hero: React.FC = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // IMAGENS DESKTOP – 1920x1080
+  // DESKTOP
   const slidesDesktop = [
     {
       id: 1,
       image: 'desktop1.png',
       title: 'Cozinhas Planejadas',
-      subtitle: 'Transformamos sua cozinha em um ambiente funcional e elegante'
+      subtitle: 'Transformamos sua cozinha em um ambiente funcional e elegante',
+      button: <Button />
     },
     {
       id: 2,
       image: 'desktop2.png',
       title: 'Conheça nossos projetos',
-      subtitle: 'Móveis planejados que maximizam o espaço e o conforto'
+      subtitle: 'Móveis planejados que maximizam o espaço e o conforto',
+      button: <Button />
     }
   ];
 
-  // IMAGENS MOBILE – 1080x1920 (verticais)
+  // MOBILE
   const slidesMobile = [
     {
       id: 1,
       image: 'mobile2.png',
       title: 'Cozinhas Planejadas',
-      subtitle: 'Funcionalidade e elegância em qualquer espaço'
+      subtitle: 'Funcionalidade e elegância em qualquer espaço',
+      button: <Button />
     },
     {
       id: 2,
@@ -52,16 +54,12 @@ const Hero: React.FC = () => {
       id: 3,
       image: 'mobile3.png',
       title: 'Conheça nossos projetos',
-      subtitle: 'Conforto máximo em ambientes planejados'
+      subtitle: 'Conforto máximo em ambientes planejados',
+      button: <Button />
     }
   ];
 
   const slides = isMobile ? slidesMobile : slidesDesktop;
-
-  const handleWhatsAppClick = () => {
-    const message = encodeURIComponent('Olá, estou vindo do seu site e gostaria de um orçamento');
-    window.open(`https://wa.me/5511934708733?text=${message}`, '_blank');
-  };
 
   return (
     <section id="hero" className="relative h-screen object-cover">
@@ -112,18 +110,18 @@ const Hero: React.FC = () => {
                     <div className="mt-[-15px]">{slide.subtitle}</div>
                   </motion.p>
 
-                  {/* BOTÃO – some no slide 2 do mobile */}
-                  {!(isMobile && slide.id === 2) && (
-                    <motion.button
-                      onClick={handleWhatsAppClick}
-                      onTouchStart={handleWhatsAppClick}
-                      className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg text-lg font-semibold shadow-lg
-                      md:px-6 md:py-3"
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                    >
-                      Solicitar Orçamento
-                    </motion.button>
+                  {/* BOTÃO — agora funcionando em todos os slides */}
+                  {slide.button && (
+                    <div className="pointer-events-none flex justify-center mt-4">
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5 }}
+                        className="pointer-events-auto"
+                      >
+                        {slide.button}
+                      </motion.div>
+                    </div>
                   )}
 
                 </div>
