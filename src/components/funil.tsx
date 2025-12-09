@@ -79,8 +79,8 @@ export default function CTAQuestions() {
                 disabled={answers.nome.trim().length < 3}
                 onClick={() => setStep(2)}
                 className={`px-6 py-3 rounded-lg text-white font-semibold ${answers.nome.trim().length < 3
-                    ? "bg-gray-400 cursor-not-allowed"
-                    : "bg-red-600 hover:bg-red-700"
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-red-600 hover:bg-red-700"
                   }`}
               >
                 Continuar
@@ -152,8 +152,8 @@ export default function CTAQuestions() {
                 disabled={answers.localizacao.trim().length < 3}
                 onClick={() => setStep(6)}
                 className={`px-6 py-3 rounded-lg text-white font-semibold ${answers.localizacao.trim().length < 3
-                    ? "bg-gray-400 cursor-not-allowed"
-                    : "bg-red-600 hover:bg-red-700"
+                  ? "bg-gray-400 cursor-not-allowed"
+                  : "bg-red-600 hover:bg-red-700"
                   }`}
               >
                 Continuar
@@ -188,9 +188,12 @@ export default function CTAQuestions() {
           {/* --- STEP 7 — Final --- */}
           {step === 7 && (
             <motion.div key="step7" {...slideAnimation}>
-              <h2 className="text-2xl  flex flex-col font-bold mb-6 gap-3">
-                <p className="text-red-600 text-4xl font-bold" >Perfeito, agora falta pouco!</p> <p>Fale agora com um dos nossos consultores para finalizar seu projeto!</p>
-              </h2>
+              <div className="h-auto py-3">
+                <h2 className="text-2xl font-bold">
+                  <p className="text-red-600 text-4xl font-bold" >Falta pouco!</p>
+                </h2>
+                <p>Fale agora com um dos nossos consultores para finalizar seu projeto!</p>
+              </div>
 
               <button
                 onClick={openWhatsApp}

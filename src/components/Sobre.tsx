@@ -12,12 +12,12 @@ export default function Sobre() {
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
                 >
-                    <div className='w-[50%] p-10 flex flex-col'>
-                        <h2 className="w-full text-left text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                    <div className='w-full p-10 flex flex-col'>
+                        <h2 className="w-full text-center text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                             Sobre a <span className="text-red-600">Prinos Planejados </span>
                         </h2>
 
-                        <div className="max-w-4xl text-left">
+                        <div className="max-w-4xl text-center">
                             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
                                 Com 16 anos de história no mercado de móveis planejados, a Prinos Planejados
                                 se consolidou como referência em qualidade, inovação e atendimento personalizado.

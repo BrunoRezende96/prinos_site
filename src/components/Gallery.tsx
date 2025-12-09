@@ -86,14 +86,38 @@ const Gallery: React.FC = () => {
           </p>
         </motion.div> */}
 
-        <div className="mt-[280px] px-10 pb-10 relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          <div className='absolute w-full h-[480px] rounded-[10px] bottom-0 bg-red-600' ></div>
+        <div className="mt-[300px] px-10 pb-10 relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4
+        
+        #ajuste margin top em md
+        ">
+          <div className='absolute w-full h-[95%] rounded-[10px] bottom-0 bg-red-600
+          
+          #ajuste altura do background em md
+          md:h-[100%]
+          md:flex
+          md:top-[-1.25rem]
+
+
+          
+          ' >
+
+
+
+            
+          </div>
           
           
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
-              className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg"
+              className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg
+              
+              #Ajuste de tamanho dos cards em md
+              
+              md:h-[150px]
+              md:w-[300px]
+              
+              "
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
@@ -104,7 +128,7 @@ const Gallery: React.FC = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                className="w-full h-64 object-cover object-center transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300" />
               <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">

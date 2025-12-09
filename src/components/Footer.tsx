@@ -19,6 +19,8 @@ const Footer: React.FC = () => {
     <footer className="bg-black text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+
           {/* Logo e Descrição */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -30,13 +32,13 @@ const Footer: React.FC = () => {
               <img
                 src="logo_prinos_sf.png"
                 alt="logo prinos"
-                className='w-[30%] cursor-pointer hover:transform hover:scale-105 transition-all duration-300' /> 
+                className='w-[30%] cursor-pointer hover:transform hover:scale-105 transition-all duration-300' />
             </div>
-            <p className="text-gray-300 mb-4 leading-relaxed">
+            <p className="text-gray-300 mb-4 leading-relaxed text-center ">
               Há 16 anos transformando sonhos em realidade através de móveis planejados
               de alta qualidade e design exclusivo.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex justify-center space-x-4">
               <a href="#" className="text-gray-400 hover:text-red-600 transition-colors">
                 <Facebook className="w-6 h-6" />
               </a>
@@ -56,8 +58,8 @@ const Footer: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-lg font-semibold mb-4">Navegação</h4>
-            <ul className="space-y-2">
+            <h4 className="text-lg text-center font-semibold mb-4">Navegação</h4>
+            <ul className="space-y-2 text-center ">
               <li>
                 <button
                   onClick={() => scrollToSection('hero')}
@@ -100,20 +102,27 @@ const Footer: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-lg font-semibold mb-4">Contatos</h4>
-            <ul className="space-y-3">
-              <li className="flex items-center">
+            <h4 className="text-lg font-semibold mb-4 text-center">Contatos</h4>
+            <ul className="w-full space-y-3 flex flex-col  justify-center">
+
+              <li className="flex justify-center">
                 <Phone className="w-5 h-5 text-red-600 mr-3" />
                 <span className="text-gray-300">(11) 93470-8733</span>
               </li>
-              <li className="flex items-center">
+
+
+              <li className="flex justify-center">
                 <Mail className="w-5 h-5 text-red-600 mr-3" />
                 <span className="text-gray-300">contato@prinosplanejados.com.br</span>
               </li>
-              <li className="flex items-center">
+
+
+              <li className="flex justify-center">
                 <MapPin className="w-5 h-5 text-red-600 mr-3" />
                 <span className="text-gray-300">São Paulo - SP</span>
               </li>
+
+
             </ul>
           </motion.div>
 
@@ -124,10 +133,12 @@ const Footer: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-lg font-semibold mb-4">Atendimento</h4>
-            <div className="space-y-3">
-              <div className="flex items-start">
-                <Clock className="w-5 h-5 text-red-600 mr-3 mt-1" />
+            <h4 className="text-lg font-semibold mb-4 text-center">Horários de Atendimento</h4>
+            <div className="space-y-3 text-center w-full">
+              <div className="flex flex-col justify-center w-full">
+
+                <Clock className="w-full h-5 text-red-600 mr-3 mt-1" />
+
                 <div className="text-gray-300">
                   <p>Segunda a Sexta</p>
                   <p className="text-sm">8h às 18h</p>
@@ -136,15 +147,23 @@ const Footer: React.FC = () => {
                 </div>
               </div>
             </div>
-            <motion.button
-              onClick={handleWhatsAppClick}
-              className="mt-4 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Solicitar Orçamento
-            </motion.button>
+
+
+            <div className='w-full flex justify-center' >
+              <motion.button
+                onClick={handleWhatsAppClick}
+                className=" mt-4 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-300"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Solicitar Orçamento
+              </motion.button>
+            </div>
+
+
+
           </motion.div>
+
         </div>
       </div>
 

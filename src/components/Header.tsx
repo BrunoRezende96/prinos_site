@@ -41,16 +41,28 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
+          
+
+
           {/* Logo */}
           <motion.div
-            className="flex items-center justify-center h-[100%] w-[20%]"
+            className="flex items-center justify-center h-[100%] w-[30%]
+            
+            
+            "
             whileHover={{ scale: 1.05 }}
             // transition={{ type: "spring", stiffness: 400, damping: 10 }}
           >
             <img 
             src="prinos_logo.png" 
             alt="prinos logo"
-            className='object-cover w-[50%] cursor-pointer origin-center' />
+            className='object-cover w-full cursor-pointer origin-center
+            
+            
+
+            
+            
+            ' />
           </motion.div>
 
           {/* Desktop Navigation */}
