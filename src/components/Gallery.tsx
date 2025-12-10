@@ -27,32 +27,32 @@ const Gallery: React.FC = () => {
     {
       id: 4,
       image: 'desktop4.png',
-      title: 'Home Office',
-      category: 'Escritório'
+      title: 'Painel Ripado',
+      category: 'Sala'
     },
     {
       id: 5,
       image: 'mobile1.png',
-      title: 'Cozinha Clássica',
-      category: 'Cozinha'
+      title: 'Cozinha com Ilha',
+      category: 'Cozinha com ilha em mármore'
     },
     {
       id: 6,
       image: 'mobile2.png',
-      title: 'Quarto Infantil',
-      category: 'Dormitório'
+      title: 'Painel de TV',
+      category: 'Sala'
     },
     {
       id: 7,
       image: 'mobile3.png',
-      title: 'Sala de Jantar',
-      category: 'Sala'
+      title: 'Closet Planejado',
+      category: 'Para suites'
     },
     {
       id: 8,
-      image: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      title: 'Escritório Executivo',
-      category: 'Escritório'
+      image: 'desktop5.png',
+      title: 'Cozinha Contemporânea',
+      category: 'Modernidade e harmonia'
     }
   ];
 
