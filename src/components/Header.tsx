@@ -47,6 +47,19 @@ const Header: React.FC = () => {
           {/* Logo */}
           <motion.div
             className="flex items-center justify-center h-[100%] w-[30%]
+
+
+            #Ajustes da logo em md
+            md:w-[15%]
+
+            #Ajustes da logo em lg
+            lg:w-[13%]
+
+            #Ajustes da logo em xl
+            xl:w-[10%]
+            
+            #Ajustes da logo em 2xl
+            2xl:w-[9%]
             
             
             "
