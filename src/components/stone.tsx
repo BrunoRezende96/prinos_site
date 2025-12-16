@@ -8,12 +8,12 @@ const StoneSection = () => {
     {
       id: 1,
       src: "1.png",
-      alt: "Bancada de mármore branco em cozinha moderna"
+      alt: "Cozinha moderna em mármore Calacatta"
     },
     {
       id: 2,
       src: "2.png",
-      alt: "Ilha de granito preto com veios dourados"
+      alt: "Ilha cinza com tampo de granito Dallas"
     },
     {
       id: 3,
@@ -23,27 +23,27 @@ const StoneSection = () => {
     {
       id: 4,
       src: "4.png",
-      alt: "Mármore Carrara em banheiro de luxo"
+      alt: "Lavabo em granito cinza corumbá"
     },
     {
       id: 5,
       src: "5.png",
-      alt: "Granito verde ubatuba em área gourmet"
+      alt: "Cozinha industrial com mármore grigio michelangelo"
     },
     {
       id: 6,
       src: "6.png",
-      alt: "Pedra São Gabriel em lavatório"
+      alt: "Cozinha de alto padrão com quartzo patagonia"
     },
     {
       id: 7,
       src: "7.png",
-      alt: "Mármore Travertino em sala de estar"
+      alt: "Cozinha com ilha em mármore nero portoro gold."
     },
     {
       id: 8,
       src: "8.png",
-      alt: "Granito Absoluto Black em cozinha gourmet"
+      alt: "Cozinha com ilha em granito black forest."
     }
   ];
 
