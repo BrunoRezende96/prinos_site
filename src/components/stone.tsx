@@ -54,7 +54,7 @@ const StoneSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen bg-neutral-200 text-white overflow-hidden">
+    <section id='stones'  className="relative min-h-screen bg-neutral-200 text-white overflow-hidden">
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -63,7 +63,7 @@ const StoneSection = () => {
             "url(marmorebg.jpg)",
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-black/10 via-black/05 to-black/02 " />
+      <div className="absolute inset-0 bg-gradient-to-br from-black/10 " />
 
       {/* Conteúdo */}
       <div className="relative z-10 container mx-auto px-4 py-24 flex flex-col items-center">
@@ -86,7 +86,7 @@ const StoneSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-xl md:text-2xl mt-4 text-zinc-400"
+            className="text-xl md:text-2xl mt-4 text-red-700"
           >
             Conheça alguns projetos executados pela nossa equipe especializada
           </motion.p>
