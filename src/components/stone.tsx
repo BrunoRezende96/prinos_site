@@ -47,6 +47,12 @@ const StoneSection = () => {
     }
   ];
 
+
+    const whatsappMessage = encodeURIComponent("Olá, gostaria de solicitar um orçamento para pedras naturais e industriais.");
+    const openWhatsApp = () => {
+    window.open(`https://wa.me/5511934708733?text=${whatsappMessage}`, "_blank");
+  };
+
   return (
     <section className="relative min-h-screen bg-neutral-200 text-white overflow-hidden">
       {/* Background */}
@@ -115,6 +121,7 @@ const StoneSection = () => {
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.97 }}
             className="bg-red-600 hover:bg-red-700 text-white font-semibold text-lg px-10 py-4 rounded-xl shadow-xl transition-all"
+            onClick={openWhatsApp}
           >
             Solicite seu Orçamento
           </motion.button>

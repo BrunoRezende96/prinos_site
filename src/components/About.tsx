@@ -35,7 +35,7 @@ const About: React.FC = () => {
   ];
 
   return (
-    <section id="about" className="
+    <section className="
     mt-[-300px]
     xl:mt-[-200px]
     lg:mt-[-260px]

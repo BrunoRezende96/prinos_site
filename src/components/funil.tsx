@@ -44,7 +44,7 @@ export default function CTAQuestions() {
   };
 
   return (
-    <section className="w-full flex justify-center py-20 bg-slate-100 rounded-xl">
+    <section  id="contact" className="w-full flex justify-center py-20 bg-slate-100 rounded-xl">
       <div className="w-full max-w-2xl text-center p-6">
         <AnimatePresence mode="wait">
 

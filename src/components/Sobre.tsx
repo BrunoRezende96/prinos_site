@@ -2,9 +2,8 @@ import { motion } from 'framer-motion';
 
 export default function Sobre() {
   return (
-    <div className="w-full flex justify-center">
+    <div  id="about" className="pt-20 w-full flex justify-center">
       <section
-        id="about"
         className="container mx-auto px-4 flex flex-col"
       >
         <motion.div
@@ -16,7 +15,7 @@ export default function Sobre() {
         >
           {/* TEXTO */}
           <div className="w-full flex flex-col">
-            <h2 className="
+            <h2  className="
               w-full
               text-center
               text-4xl
