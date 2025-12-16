@@ -81,11 +81,16 @@ const About: React.FC = () => {
 
         {/* CARDS */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12
+              
+              sm:mt-[600px]
+              
+              
               md:flex 
               md:gap-3
               md:items-center 
               md:justify-center 
               md:flex-nowrap
+              md:mt-0
 
               xl:flex
               xl:gap-4

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
 import Sobre from './Sobre';
 import CTAQuestions from './funil';
+import StoneSection from './stone';
 
 const Reviews: React.FC = () => {
   const reviews = [
@@ -137,11 +138,16 @@ const Reviews: React.FC = () => {
         </div>
       </section>
 
+      <div>
+        <StoneSection />
+      </div>
+
       <div className='h-auto p-10'>
         <CTAQuestions />
       </div>
 
     </div>
+
 
   );
 };

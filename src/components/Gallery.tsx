@@ -88,8 +88,15 @@ const Gallery: React.FC = () => {
 
         <div className="mt-[300px] px-10 pb-10 relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4
         
+        
         #ajuste margin top em xs
           xs:mt-[500px]
+
+        #ajuste margin top em sm
+          sm:mt-[1350px] 
+          
+        #ajuste margin top em sm2
+          sm2:mt-[1100px]
 
         #ajuste margin top em md
           md:mt-[30px]

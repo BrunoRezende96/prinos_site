@@ -6,7 +6,9 @@ export default {
   ],
   theme: {
     screens: {
-      'xs': '420px',    // breakpoint personalizado
+      'xxs': '360px',   // breakpoint personalizado
+      'xs': '420px',
+      'sm2': '600px',    // breakpoint personalizado
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
@@ -23,7 +25,7 @@ export default {
           600: "#A00000",
           700: "#800000",
         }
-      },
+      }, 
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui'],
       },
